@@ -58,6 +58,24 @@ def obtener_todo():
     print(ofertas_claves)
 
 #Obtener y mostrar todos los valores guardados
+def obtener_valores():
+     # Usuarios (excluyendo clicks)
+    usuarios_claves = [c for c in baseDatos.keys("usuario:*") if ":clicks" not in c]
+    print("\nValores de usuarios:")
+    for clave in usuarios_claves:
+        print(baseDatos.hgetall(clave))
+
+    # Clicks
+    clicks_claves = baseDatos.keys("usuario:*:clicks")
+    print("\nValores de clicks:")
+    for clave in clicks_claves:
+        print(baseDatos.hgetall(clave))
+
+    # Ofertas
+    ofertas_claves = baseDatos.keys("oferta:*")
+    print("\nValores de ofertas:")
+    for clave in ofertas_claves:
+        print(baseDatos.hgetall(clave))
 
 #Función principal
 def main():
@@ -67,6 +85,7 @@ def main():
     actualizar_registro("usuario:1", "nombre", "David")
     eliminar_clave("usuario:7")
     obtener_todo()
+    obtener_valores()
 
 #Llamada a la función principal
 if __name__ == "__main__":
