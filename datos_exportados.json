@@ -1,0 +1,83 @@
+{
+    "usuarios": [
+        {
+            "nombre": "María",
+            "edad": "40",
+            "id": "usuario:2"
+        },
+        {
+            "nombre": "David",
+            "edad": "34",
+            "id": "usuario:1"
+        },
+        {
+            "nombre": "Ana",
+            "edad": "29",
+            "id": "usuario:4"
+        },
+        {
+            "nombre": "Luis",
+            "edad": "43",
+            "id": "usuario:5"
+        },
+        {
+            "nombre": "Pedro",
+            "edad": "51",
+            "id": "usuario:3"
+        }
+    ],
+    "ofertas": [
+        {
+            "titulo": "Desarrollador Python",
+            "empresa": "TechCorp",
+            "ubicacion": "Madrid",
+            "id": "oferta:101"
+        },
+        {
+            "titulo": "Project Manager",
+            "empresa": "GlobalCorp",
+            "ubicacion": "Bilbao",
+            "id": "oferta:105"
+        },
+        {
+            "titulo": "Ingeniero DevOps",
+            "empresa": "CloudServices",
+            "ubicacion": "Valencia",
+            "id": "oferta:103"
+        },
+        {
+            "titulo": "Diseñador UX/UI",
+            "empresa": "Creativa",
+            "ubicacion": "Sevilla",
+            "id": "oferta:104"
+        },
+        {
+            "titulo": "Analista de Datos",
+            "empresa": "DataSolutions",
+            "ubicacion": "Barcelona",
+            "id": "oferta:102"
+        }
+    ],
+    "clicks": [
+        {
+            "usuario": 2,
+            "oferta": 101,
+            "clicks": 3
+        },
+        {
+            "usuario": 2,
+            "oferta": 103,
+            "clicks": 4
+        },
+        {
+            "usuario": 1,
+            "oferta": 101,
+            "clicks": 5
+        },
+        {
+            "usuario": 1,
+            "oferta": 102,
+            "clicks": 2
+        }
+    ]
+}
